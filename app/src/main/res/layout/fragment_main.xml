@@ -19,17 +19,16 @@
         android:textColor="#000000"
         android:textSize="30sp" />
 
-    <EditText
-        android:id="@+id/editTextTextMultiLine"
+    <TextView
+        android:id="@+id/textView6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
         android:fontFamily="serif-monospace"
-        android:gravity="start|top"
-        android:inputType="textMultiLine"
         android:padding="10sp"
         android:text="A world of fantasy and adventure is about to be unfold. Welcome to the world of Aserland, a place conflicted between the wars of good and evil."
-        android:textColor="#000000" />
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView2"
@@ -42,6 +41,7 @@
         android:textColor="#000000" />
 
     <LinearLayout
+        android:id="@+id/demon_hunter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -69,6 +69,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/huntress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -96,6 +97,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/knight"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">

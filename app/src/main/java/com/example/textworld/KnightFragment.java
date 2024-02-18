@@ -9,45 +9,25 @@ import androidx.fragment.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
+import android.widget.Button;
 
-public class MainFragment extends Fragment {
+public class KnightFragment extends Fragment {
 
-    public MainFragment() {
+    public KnightFragment() {
         // Required empty public constructor
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
-        View view = inflater.inflate(R.layout.fragment_main, container, false);
-
-        LinearLayout demonHunter = view.findViewById(R.id.demon_hunter);
-        LinearLayout huntress = view.findViewById(R.id.huntress);
-        LinearLayout knight = view.findViewById(R.id.knight);
-        demonHunter.setOnClickListener(new View.OnClickListener() {
+        View view = inflater.inflate(R.layout.fragment_knight, container, false);
+        Button button = view.findViewById(R.id.button2);
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                switchFragment(new DemonHunterFragment());
+            public void onClick(View v) {
+                switchFragment(new MainFragment());
             }
         });
-
-        huntress.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                switchFragment(new HuntressFragment());
-            }
-        });
-
-        knight.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                switchFragment(new KnightFragment());
-            }
-        });
-
-
         // Inflate the layout for this fragment
         return view;
     }

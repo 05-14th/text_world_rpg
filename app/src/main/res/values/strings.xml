@@ -2,4 +2,5 @@
     <string name="app_name">TextWorld</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="desc_4">Mael releases a powerful cut in all direction that can instantly kill an enemy. This can only be activated if Mael\'s other skills hit an enemy.</string>
 </resources>
